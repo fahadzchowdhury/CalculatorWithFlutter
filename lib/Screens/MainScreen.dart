@@ -1,5 +1,3 @@
-import 'package:calculator/Widgets/CalculatorButtons.dart';
-import 'package:calculator/Widgets/CalculatorColumn.dart';
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 
@@ -37,7 +35,6 @@ class _MainScreenState extends State<MainScreen> {
         } catch (e) {
           result = 'Error';
         }
-        ;
       } else if (buttonPress == 'c') {
         UserInput = '';
         result = '00';
@@ -101,43 +98,267 @@ class _MainScreenState extends State<MainScreen> {
                   children: [
                     Expanded(child: Column(
                       children: [
-                        CalculatorButton("v"),
-                        CalculatorButton("("),
-                        CalculatorButton("1"),
-                        CalculatorButton("4"),
-                        CalculatorButton("7"),
-                        CalculatorButton("0")
+                        Expanded(
+                    child: TextButton(onPressed: () => ButtonFunction("v"),
+                        child: Text(
+                          "v",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20
+                          ),
+                        )
+                    )
+                ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("("),
+                                child: Text(
+                                  "(",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("1"),
+                                child: Text(
+                                  "1",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("4"),
+                                child: Text(
+                                  "4",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("7"),
+                                child: Text(
+                                  "7",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("0"),
+                                child: Text(
+                                  "0",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        )
                       ],
                     )
                     ),
                     Expanded(child: Column(
                       children: [
-                        CalculatorButton("c"),
-                        CalculatorButton(")"),
-                        CalculatorButton("2"),
-                        CalculatorButton("5"),
-                        CalculatorButton("8"),
-                        CalculatorButton("00")
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("c"),
+                                child: Text(
+                                  "c",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction(")"),
+                                child: Text(
+                                  ")",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("2"),
+                                child: Text(
+                                  "2",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("5"),
+                                child: Text(
+                                  "5",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("8"),
+                                child: Text(
+                                  "8",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("00"),
+                                child: Text(
+                                  "00",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
                       ],
                     )
                     ),
                     Expanded(child: Column(
                       children: [
-                        CalculatorButton("x"),
-                        CalculatorButton("%"),
-                        CalculatorButton("3"),
-                        CalculatorButton("6"),
-                        CalculatorButton("9"),
-                        CalculatorButton(".")
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("x"),
+                                child: Text(
+                                  "x",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("%"),
+                                child: Text(
+                                  "%",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("3"),
+                                child: Text(
+                                  "3",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("6"),
+                                child: Text(
+                                  "6",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("9"),
+                                child: Text(
+                                  "9",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            child: TextButton(onPressed: () => ButtonFunction("."),
+                                child: Text(
+                                  ".",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
                       ],
                     )
                     ),
                     Expanded(child: Column(
                       children: [
-                        LastColumn("/", flexNumber: 1),
-                        LastColumn("*", flexNumber: 1),
-                        LastColumn("-", flexNumber: 1),
-                        LastColumn("+", flexNumber: 1),
+                        Expanded(
+                            flex: 1,
+                            child: TextButton(onPressed: () => ButtonFunction("/"),
+                                child: Text(
+                                  "/",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            flex: 1,
+                            child: TextButton(onPressed: () => ButtonFunction("*"),
+                                child: Text(
+                                  "*",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            flex: 1,
+                            child: TextButton(onPressed: () => ButtonFunction("-"),
+                                child: Text(
+                                  "-",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
+                        Expanded(
+                            flex: 1,
+                            child: TextButton(onPressed: () => ButtonFunction("+"),
+                                child: Text(
+                                  "+",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20
+                                  ),
+                                )
+                            )
+                        ),
                         Expanded(
                           flex: 2,
                             child: TextButton(
