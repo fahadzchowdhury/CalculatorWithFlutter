@@ -14,7 +14,7 @@ class _MainScreenState extends State<MainScreen> {
   Color lightBlue = Color(0xff296D98);
 
   String UserInput = "";
-  String result = "0";
+  String result = "";
   Parser p = Parser();
   ContextModel cm = ContextModel();
 
@@ -99,9 +99,9 @@ class _MainScreenState extends State<MainScreen> {
                     Expanded(child: Column(
                       children: [
                         Expanded(
-                    child: TextButton(onPressed: () => ButtonFunction("v"),
+                    child: TextButton(onPressed: () => ButtonFunction("c"),
                         child: Text(
-                          "v",
+                          "AC",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 20
@@ -241,7 +241,7 @@ class _MainScreenState extends State<MainScreen> {
                     Expanded(child: Column(
                       children: [
                         Expanded(
-                            child: TextButton(onPressed: () => ButtonFunction("x"),
+                            child: TextButton(onPressed: () => ButtonFunction("*"),
                                 child: Text(
                                   "x",
                                   style: TextStyle(
